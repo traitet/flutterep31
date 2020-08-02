@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './screens/Ep231Page.dart';
 import './screens/Ep221Page.dart';
 import './screens/Ep222Page.dart';
 import './screens/Ep202Page.dart';
@@ -121,6 +122,7 @@ class _MyHomePageState extends State<MyHomePage> {
 //============================================================
 // CREATE BUTTON
 //============================================================
+           RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep231Page()),);},child: Text('EP23-1 - UI: Register Account'),),
            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep222Page()),);},child: Text('EP22-2 - Forgot Password'),),
            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep221Page()),);},child: Text('EP22-1 - Login'),),
            RaisedButton(onPressed: () {},child: Text('EP21 - Download code from GitHub, System & UI Design, E-menu case study (Develop Workable App)'),),           
