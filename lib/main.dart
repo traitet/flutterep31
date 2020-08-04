@@ -19,6 +19,7 @@ import './screens/Ep163Page.dart';
 import './screens/NewPage.dart';
 import './screens/Ep251Page.dart';
 import './screens/Ep252Page.dart';
+import './screens/Ep261Page.dart';
 void main() {
   runApp(MyApp());
 }
@@ -124,6 +125,7 @@ class _MyHomePageState extends State<MyHomePage> {
 //============================================================
 // CREATE BUTTON
 //============================================================
+           RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep261Page()),);},child: Text('EP26-1 - UI: View Food Menu Detail'),),
            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep252Page()),);},child: Text('EP25-2 - UI: Search Food Menu - Menu List'),),
            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep251Page()),);},child: Text('EP25-1 - UI: Search Food Menu - Food Cat'),),
            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep241Page()),);},child: Text('EP24-1 - UI: Edit User Account'),),
