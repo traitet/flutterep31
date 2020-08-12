@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './screens/Ep311Page.dart';
 import './screens/Ep301Page.dart';
 import './screens/Ep291Page.dart';
 import './screens/Ep281Page.dart';
@@ -129,6 +130,7 @@ class _MyHomePageState extends State<MyHomePage> {
 //============================================================
 // CREATE BUTTON
 //============================================================
+            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep311Page()),);},child: Text('EP31-1- App Icon: auto gen for IOS, Andriod'),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep301Page()),);},child: Text('EP30-1- UI: Maintain Food Menu (Cont.)'),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep291Page()),);},child: Text('EP29-1- UI: Maintain Food Menu'),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep281Page()),);},child: Text('EP28-1- UI: Maintain Food Menu'),),
