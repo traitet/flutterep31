@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './screens/Ep331Page.dart';
 import './screens/Ep321Page.dart';
 import './screens/Ep311Page.dart';
 import './screens/Ep301Page.dart';
@@ -131,7 +132,8 @@ class _MyHomePageState extends State<MyHomePage> {
 //============================================================
 // CREATE BUTTON
 //============================================================
-            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep321Page()),);},child: Text('EP31-2- UI: Scan QR'),),
+            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep331Page()),);},child: Text('EP33-1- UI: Make Payment'),),
+            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep321Page()),);},child: Text('EP32-1- UI: Scan QR'),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep311Page()),);},child: Text('EP31-1- App Icon: auto gen for IOS, Andriod'),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep301Page()),);},child: Text('EP30-1- UI: Maintain Food Menu (Cont.)'),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep291Page()),);},child: Text('EP29-1- UI: Maintain Food Menu'),),
