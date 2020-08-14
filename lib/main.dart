@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:splashscreen/splashscreen.dart';
+import './screens/Ep351Page.dart';
+import './screens/Ep341Page.dart';
 import './screens/Ep331Page.dart';
 import './screens/Ep321Page.dart';
 import './screens/Ep311Page.dart';
@@ -57,7 +60,25 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'See-Flutter เรียนรู้ไปด้วยกัน START EP31'),
+      home:  
+//==============================================
+// SPLASH SCREEN PAGE
+//==============================================          
+      SplashScreen(
+      seconds: 3,
+      navigateAfterSeconds: MyHomePage(title: 'See-Flutter เรียนรู้ไปด้วยกัน START EP31',),
+      title: Text('Welcome to See-Flutter',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20.0),),
+      image: Image.asset('assets/icon/icon.png'),
+      backgroundColor: Colors.orange,
+      styleTextUnderTheLoader: TextStyle(),
+      photoSize: 50,
+      onClick: ()=>print("See-Flutter"),
+      loaderColor: Colors.red
+    )
+//==============================================
+// COMMENT FOR RUN SPLASHSCREEN PAGE
+//==============================================       
+      //MyHomePage(title: 'See-Flutter เรียนรู้ไปด้วยกัน START EP31'),
     );
   }
 }
@@ -132,6 +153,8 @@ class _MyHomePageState extends State<MyHomePage> {
 //============================================================
 // CREATE BUTTON
 //============================================================
+            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep351Page()),);},child: Text('EP35-1- Release flutter web to github'),),
+            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep341Page()),);},child: Text('EP34-1- Splash Screen'),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep331Page()),);},child: Text('EP33-1- UI: Make Payment'),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep321Page()),);},child: Text('EP32-1- UI: Scan QR'),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep311Page()),);},child: Text('EP31-1- App Icon: auto gen for IOS, Andriod'),),
