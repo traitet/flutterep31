@@ -32,6 +32,10 @@ dependencies:
   # SPLASHSCREEN PACKAGE
   # ============================================================  
   splashscreen: ^1.2.0
+  # ============================================================
+  # FIREBASE LOGIN FUNCTION
+  # ============================================================    
+  firebase_auth: ^0.16.1
 
 dev_dependencies:
   flutter_test:
