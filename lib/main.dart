@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterep11/screens/Ep371Page.dart';
 import './screens/Ep361Page.dart';
 import 'package:splashscreen/splashscreen.dart';
 import './screens/Ep351Page.dart';
@@ -154,6 +155,7 @@ class _MyHomePageState extends State<MyHomePage> {
 //============================================================
 // CREATE BUTTON
 //============================================================
+            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep371Page()),);},child: Text('EP37-1- Firebase Login by E-mail'),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep361Page()),);},child: Text('EP36-1- Google Firebase for Case Study'),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep351Page()),);},child: Text('EP35-1- Release flutter web to github'),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep341Page()),);},child: Text('EP34-1- Splash Screen'),),
