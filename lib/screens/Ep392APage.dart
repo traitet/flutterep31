@@ -1,14 +1,14 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import '../screens/Ep391BPage.dart';
+import '../screens/Ep392BPage.dart';
 import '../screens/Ep252Page.dart';
 
-class Ep391APage extends StatefulWidget {
+class Ep392APage extends StatefulWidget {
   @override
-  _Ep391APageState createState() => _Ep391APageState();
+  _Ep392APageState createState() => _Ep392APageState();
 }
 
-class _Ep391APageState extends State<Ep391APage> {
+class _Ep392APageState extends State<Ep392APage> {
 //======================================================================
 // STEP#1) DECLARE VARIABLE SCAFFOLD KEY
 //======================================================================  
@@ -38,7 +38,7 @@ final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
 // LOGIN TEXT
 //==========================================================  
               SizedBox(height: 60,), 
-              Center(child: Text('EP39-1A', style: TextStyle(fontSize: 20),)),  
+              Center(child: Text('EP39-2A', style: TextStyle(fontSize: 20),)),  
               SizedBox(height: 10,),      
               Center(child: Image(
                 width: 100,
@@ -94,7 +94,7 @@ final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
 //==========================================================
 // EP39-1A: ADD CODE
 //==========================================================   
-                  Navigator.push(context,MaterialPageRoute(builder: (context) => Ep391BPage()),);
+                  Navigator.push(context,MaterialPageRoute(builder: (context) => Ep392BPage()),);
                 
                 },child: Text('HERE', style: TextStyle(color: Colors.red,fontSize: 16),),),                 
                 ],

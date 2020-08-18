@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import './screens/Ep392APage.dart';
+import './screens/Ep392BPage.dart';
 import './screens/Ep391APage.dart';
 import './screens/Ep391BPage.dart';
 import './screens/Ep371Page.dart';
@@ -158,6 +160,8 @@ class _MyHomePageState extends State<MyHomePage> {
 //============================================================
 // CREATE BUTTON
 //============================================================
+            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep392BPage()),);},child: Text('EP39-2B - Firebase: Forgot password (reset pwd)'),),
+            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep392APage()),);},child: Text('EP39-2A - Firebase: Forgot password (login)'),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep391BPage()),);},child: Text('EP39-1B - Firebase: Forgot password (reset pwd)'),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep391APage()),);},child: Text('EP39-1A - Firebase: Forgot password (login)'),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep381Page()),);},child: Text('EP38-1 - Firebase Login by E-mail (cont)'),),
