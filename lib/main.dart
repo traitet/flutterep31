@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import './screens/Ep391APage.dart';
+import './screens/Ep391BPage.dart';
 import './screens/Ep371Page.dart';
 import './screens/Ep381Page.dart';
 import './screens/Ep361Page.dart';
@@ -156,17 +158,19 @@ class _MyHomePageState extends State<MyHomePage> {
 //============================================================
 // CREATE BUTTON
 //============================================================
-            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep381Page()),);},child: Text('EP38-1- Firebase Login by E-mail (cont)'),),
-            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep371Page()),);},child: Text('EP37-1- Firebase Login by E-mail'),),
-            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep361Page()),);},child: Text('EP36-1- Google Firebase for Case Study'),),
-            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep351Page()),);},child: Text('EP35-1- Release flutter web to github'),),
-            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep341Page()),);},child: Text('EP34-1- Splash Screen'),),
-            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep331Page()),);},child: Text('EP33-1- UI: Make Payment'),),
-            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep321Page()),);},child: Text('EP32-1- UI: Scan QR'),),
-            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep311Page()),);},child: Text('EP31-1- App Icon: auto gen for IOS, Andriod'),),
-            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep301Page()),);},child: Text('EP30-1- UI: Maintain Food Menu (Cont.)'),),
-            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep291Page()),);},child: Text('EP29-1- UI: Maintain Food Menu'),),
-            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep281Page()),);},child: Text('EP28-1- UI: Maintain Food Menu'),),
+            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep391BPage()),);},child: Text('EP39-1B - Firebase: Forgot password (reset pwd)'),),
+            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep391APage()),);},child: Text('EP39-1A - Firebase: Forgot password (login)'),),
+            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep381Page()),);},child: Text('EP38-1 - Firebase Login by E-mail (cont)'),),
+            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep371Page()),);},child: Text('EP37-1 - Firebase Login by E-mail'),),
+            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep361Page()),);},child: Text('EP36-1 - Google Firebase for Case Study'),),
+            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep351Page()),);},child: Text('EP35-1 - Release flutter web to github'),),
+            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep341Page()),);},child: Text('EP34-1 - Splash Screen'),),
+            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep331Page()),);},child: Text('EP33-1 - UI: Make Payment'),),
+            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep321Page()),);},child: Text('EP32-1 - UI: Scan QR'),),
+            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep311Page()),);},child: Text('EP31-1 - App Icon: auto gen for IOS, Andriod'),),
+            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep301Page()),);},child: Text('EP30-1 - UI: Maintain Food Menu (Cont.)'),),
+            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep291Page()),);},child: Text('EP29-1 - UI: Maintain Food Menu'),),
+            RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep281Page()),);},child: Text('EP28-1 - UI: Maintain Food Menu'),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep271Page()),);},child: Text('EP27-1 - UI: View Order'),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep261Page()),);},child: Text('EP26-1 - UI: View Food Menu Detail'),),
             RaisedButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Ep252Page()),);},child: Text('EP25-2 - UI: Search Food Menu - Menu List'),),
