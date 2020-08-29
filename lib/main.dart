@@ -75,7 +75,7 @@ class MyApp extends StatelessWidget {
 //==============================================          
       SplashScreen(
       seconds: 3,
-      navigateAfterSeconds: MyHomePage(title: 'See-Flutter เรียนรู้ไปด้วยกัน START EP31',),
+      navigateAfterSeconds: MyHomePage(title: 'See-Flutter เรียนรู้ไปด้วยกัน EP41-50',),
       title: Text('Welcome to See-Flutter',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20.0),),
       image: Image.asset('assets/icon/icon.png'),
       backgroundColor: Colors.orange,
